@@ -1,3 +1,7 @@
+---
 layout: post
-title: prueba!
-post de prueba en jekill
+title:  "prueba"
+date:   2015-09-08 
+
+---
+prueba prueba
