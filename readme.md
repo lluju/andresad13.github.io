@@ -1,37 +1,27 @@
-# Simply Grey
-Simply Grey is a nice, easy on the eyes Jekyll theme that makes great use of grey colours. 
+Notepad is a Jekyll theme which is very simple, clean and beautiful. This theme is good for any blog.
+  
+Main Features:
 
-![Screenshot of Simply Grey](http://i.imgur.com/sKpj8Oz.png)
+* Zurb Foundation 5 – css framework
+* Scss files with settings file
+* Fullscreen post covers with header wich will be bright or dark according to background image
+* Fast and light
+* Font Awesome
+* Disqus comments integration
 
-## Installation
-There are a few requirements to using and installing the Simply Grey theme.
+You can set post image covers by using only Kramdown narkdown, just place something like this: `![cover-image](http://path-to-your-image.jpg)`
 
-1. You must have Jekyll installed. If you have no done this, do it by executing the following code. 
-`gem install jekyll`
+Credits:
 
-2. You must have git installed. If you do not have this, install it on your system by using your package manager. For example, in Debian, type 
-`sudo apt-get install git`
+* Zurb Foundation 5 [http://foundation.zurb.com/](http://foundation.zurb.com/)
+* Font Awesome [http://fontawesome.io](http://fontawesome.io)
+* Google fonts [http://www.google.com/fonts](http://www.google.com/fonts)
+* Background check [http://kennethcachia.com/background-check](http://kennethcachia.com/background-check)
+* Codrops article: [http://tympanus.net/codrops/2014/05/22/inspiration-for-article-intro-effects/](http://tympanus.net/codrops/2014/05/22/inspiration-for-article-intro-effects/)
+* There are also tools like jQuery, Modernizr, Normalize.
 
-Once you have done this, installation is pretty easy.
+If you'd like to give me credit somewhere on your blog or tweet a shout out to [@hmfaysal](https://twitter.com/hmfaysal), that would be pretty sweet.
 
-Simply clone the repository
 
-`git clone https://github.com/mondss/simplygrey-jekyll.git`
-
-and serve the blog up so people can see it
-
-`cd simplygrey-jekyll; jekyll serve`
-
-## Configuring SimplyGrey
-The SimplyGrey theme is actually very easy to configure.
-
-### Adding more links to the navigation bar
-1. Open the _config.yml file
-2. Add some more values to the urls hash like the others that already exist there.
-
-### Changing the site name
-1. Open the _config.yml file
-2. Change the site name
-
-### Changing the logo/picture image
-1. Drop a 75x75 image into the img directory.
+Warm Regards and Stay Creative,  
+Hossain Mohd. Faysal
