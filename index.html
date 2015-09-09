@@ -1,10 +1,17 @@
 ---
 layout: default
-homepage: true
 ---
-<ul id="about">
-    <li>HTML+CSS, JS (jQuery), PHP</li>
-    <a href="mailto:dan.peukert@gmail.com"><li><i class="fa fa-fw fa-envelope-o"></i> dan.peukert@gmail.com</li></a>
-    <a href="https://github.com/dpeukert"><li><i class="fa fa-fw fa-github"></i> github.com/dpeukert</li></a>
-    <a href="http://google.com/+DanielPeukert"><li><i class="fa fa-fw fa-google-plus"></i> google.com/+DanielPeukert</li></a>
+<!-- Posts -->
+<ul id="posts">
+
+	{% for post in paginator.posts %}
+
+	  <li class="post">
+	  	<h2><a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">{{ post.title }}</a></h2>
+	  	<time datetime="{{ post.date | date_to_xmlschema }}" class="by-line">{{ post.date | date_to_string }}</time>
+	  	<p>{{ post.content | strip_html | truncatewords:50 }}</p>
+	  </li>
+
+    {% endfor %}
+
 </ul>
