@@ -1,0 +1,108 @@
+---
+layout: post
+title: Images with an on hover dimmed background and text overlay in HTML+CSS
+---
+
+I was recently doing an About us page for a website with pictures which dim and show text over them when hovered over and I've given myself a challenge to do it without JS or multiple images. As you can see, I succeeded:
+
+<h3>HTML</h3>
+{% highlight html %}
+<div id="member-squares">
+<a href="http://example.com/person1">
+<div class="member-square" id="person1">
+<span class="member-name">Person 1 - owner</span><br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</div>
+</a>
+<a href="http://example.com/person2">
+<div class="member-square" id="person2">
+<span class="member-name">Person 2 - owner</span><br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</div>
+</a>
+<a href="http://example.com/person3">
+<div class="member-square" id="person3">
+<span class="member-name">Person 3 - owner</span><br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</div>
+</a>
+<a href="http://example.com/person4">
+<div class="member-square" id="person4">
+<span class="member-name">Person 4 - owner</span><br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</div>
+</a>
+</div>
+{% endhighlight %}
+
+<h3>CSS</h3>
+{% highlight css %}
+#member-squares, #member-squares *{box-sizing: border-box}
+
+#member-squares a{text-decoration: none}
+.member-square{padding: 5px 30px 30px 30px; width: 300px; height: 300px; margin: 9px 20px 20px 9px; display: inline-block; vertical-align: top; color: transparent; -webkit-transition: box-shadow 0.2s linear; -transition: box-shadow 0.2s linear}
+.member-square:hover{box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5); color: white}
+.member-name{background-color: #0fa9ec; color: white; position: relative; right: 39px; top: -9px; padding: 8px}
+
+.member-square#person1 {background-image: url('http://placehold.it/300&text=Person+1')}
+.member-square#person2 {background-image: url('http://placehold.it/300&text=Person+2')}
+.member-square#person3 {background-image: url('http://placehold.it/300&text=Person+3')}
+.member-square#person4 {background-image: url('http://placehold.it/300&text=Person+4')}
+{% endhighlight %}
+
+<h3>Result</h3>
+<style>
+#member-squares, #member-squares *{box-sizing: border-box}
+
+#member-squares a{text-decoration: none}
+.member-square{padding: 5px 30px 30px 30px; width: 300px; height: 300px; margin: 9px 20px 20px 9px; display: inline-block; vertical-align: top; color: transparent; -webkit-transition: box-shadow 0.2s linear; -transition: box-shadow 0.2s linear}
+.member-square:hover{box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5); color: white}
+.member-name{background-color: #0fa9ec; color: white; position: relative; right: 39px; top: -9px; padding: 8px}
+
+.member-square#person1 {background-image: url('http://placehold.it/300&text=Person+1')}
+.member-square#person2 {background-image: url('http://placehold.it/300&text=Person+2')}
+.member-square#person3 {background-image: url('http://placehold.it/300&text=Person+3')}
+.member-square#person4 {background-image: url('http://placehold.it/300&text=Person+4')}
+</style>
+<div id="member-squares">
+<a href="http://example.com/person1">
+<div class="member-square" id="person1">
+<span class="member-name">Person 1 - owner</span><br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</div>
+</a>
+<a href="http://example.com/person2">
+<div class="member-square" id="person2">
+<span class="member-name">Person 2 - owner</span><br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</div>
+</a>
+<a href="http://example.com/person3">
+<div class="member-square" id="person3">
+<span class="member-name">Person 3 - owner</span><br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</div>
+</a>
+<a href="http://example.com/person4">
+<div class="member-square" id="person4">
+<span class="member-name">Person 4 - owner</span><br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</div>
+</a>
+</div>

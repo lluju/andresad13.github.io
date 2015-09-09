@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
+    <meta name="author" content="{{ site.name }}">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    {% if page.homepage %}
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    {% endif %}
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.baseurl }}/feed.xml" />
+</head>
+{% if page.homepage %}
+<body class="homepage">
+{% else %}
+<body class="blog">
+{% endif %}
+    <div id="content">
+        <a href="{{ site.baseurl }}/"><img src="/images/logo.png" alt="Daniel Peukert" id="logo"></a>
+        {% if page.homepage %}
+        {{ content }}
+        {% endif %}
+        <div id="menu"><a href="{{ site.baseurl }}/blog">BLOG</a><a href="{{ site.baseurl }}/about">ME + MY WORK</a></div>
+        {% if page.homepage != true %}
+        {{ content }}
+        <footer>© 2014 Daniel Peukert | Built using <a href="http://jekyllrb.com/">Jekyll</a></footer>
+        {% endif %}
+    </div>
+</body>
+</html>
