@@ -1,3 +1,0 @@
-layout: post
-title: prueba!
-post de prueba en jekill

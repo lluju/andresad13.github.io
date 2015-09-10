@@ -1,34 +1,31 @@
 # Site settings
-title: Emerald | A simple Jekyll blog
-description: "A minimal blog template, build with Jekyll."
-url: "http://www.jacoporabolini.com/emerald"
-author:
-  name: "Jacopo Rabolini"
-  email: "hello@jacoporabolini.com"
-  url: "http://www.jacoporabolini.com"
+title: "Leonel A Alfonso"
+email: andresad13@gmail.com
+description: "Leonel Alfonso blog"
+baseurl: ""
+url: "http://andresad13.github.io"
+title_description: "develop and design"
+title_image: "https://s.gravatar.com/avatar/99478936f50db27dfc0c40a09a1eda2e?s=80"
+google_analytics: "UA-20365477-4"
+disqus_account: cartenoire
+github_repository: https://github.com/andresad13
+addthis_id: ra-513c6fa83da6ec67
+post_limit: 5
+
+# Social usernames/URLs
+twitter_username: andresad13
+github_username:  andresad13
+linkedin_link: https://www.linkedin.com/pub/leonel-alfonso/b9/975/357
+google_plus_link: https://plus.google.com/u/0/106982303984702409074
+stackoverflow_link: http://stackoverflow.com/users/5104430/leonel-andr%C3%A9s-alfonso-duarte
+
+# Footer
+footer_left: "Made by @andresad13"
+footer_right: "love, passion ,code"
 
 # Build settings
-baseurl: /emerald/ # Change this to your relative path (ex: /blog/), or leave just a /
-markdown: kramdown
-source: .
-destination: ./_site
-permalink: /:title
-paginate: 8
-paginate_path: /page:num/
-
-# Default values
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-
-# Custom variables
-version: "1.1.0"
-
-# Options
-custom_header: false
-custom_nav_footer: false
-reverse: false
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+permalink: pretty
+exclude: [vendor]
