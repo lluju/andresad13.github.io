@@ -4,10 +4,10 @@ email: andresad13@gmail.com
 description: "Leonel Alfonso blog"
 baseurl: ""
 url: "http://andresad13.github.io"
-title_description: "develop and design"
-title_image: "https://s.gravatar.com/avatar/99478936f50db27dfc0c40a09a1eda2e?s=80"
+title_description: "Hi, my name is Leonel Andres Alfonso, development software is my passion and I create awesome work for the mobile and web, welcome, take a look"
+title_image: "https://s.gravatar.com/avatar/99478936f50db27dfc0c40a09a1eda2e?s=300"
 google_analytics: "UA-20365477-4"
-disqus_account: cartenoire
+disqus_account: loenelalfonso
 github_repository: https://github.com/andresad13
 addthis_id: ra-513c6fa83da6ec67
 post_limit: 5

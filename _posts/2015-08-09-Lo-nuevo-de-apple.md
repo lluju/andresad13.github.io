@@ -1,28 +1,69 @@
 ---
 layout:     post
-title:      Lo nuevo de apple
+title:      como usar bootstrap en Ruby on Rails
 date:       2015-08-09 15:31:19
 author:     Leonel Alfonso
 
-categories: apple
+categories: rails ruby
 thumbnail:  heart
 tags:
- - apple
- - tim cook
- 
- - ipad pro
+ - rails
+ - ruby
+
+ - bootstrap
 ---
+![bootstrap](https://andresad13.files.wordpress.com/2015/08/bootstrap.png?w=660)
 
-Welcome to Carte Noire.
+boostrap es uno de los frameworks mas populares para usar CSS y JS que convierte el desarrollo frontend en una manera ágil y fácil de trabajar, lo puedes usar en todos los dispositivos, en todas las formas y todos los tamaños , lo puedes usar con tus proyectos en rails con este tutorial.
 
-Carte Noire began as a new theme for [my personal blog][1], but has now taken
-on a life of its own as a free theme for Jekyll.
+<hr>
 
-The theme has been designed with simplicity and readability in mind. It makes
-use of third party services such as Disqus ad AddThis to ensure the blog has
-all the features you would expect from a dynamic application such as Wordpress
-but with the hosting and maintenance simplicity of Jekyll.
+1. instalar la gema.
 
-Please use/copy/share Carte Noire!
+para usar bootstrap en Rails debes instalar la rubygem en el gemfile de tu proyecto.
 
-[1]: http://www.jacobtomlinson.co.uk/
+<pre><code>
+gem 'bootstrap-sass', '~> 3.1.1'
+gem 'autoprefixer-rails'
+
+</code></pre>
+
+la gema autoprefixer es opcional, agrega automáticamente los proveedores de prefijos adecuado para tu código css cuando se compila, recomiendo usarla.
+
+luego corremos en bundle install para instalar la gema.
+<pre><code>
+bundle install
+</code></pre>
+
+<hr>
+2. importar los  CSS assets
+
+vamos al archivo app/assets/stylesheets/application.css y lo renombramos como app/assets/stylesheets/application.css.sass  y añadimos a este archivo los imports.
+
+<pre><code>
+// app/assets/stylesheets/application.css.sass
+
+@import "bootstrap-sprockets"
+@import "bootstrap"
+</code></pre>
+<hr>
+3. añadir los JS assets
+
+abrimos el archivo app/assets/javascripts/application.js y añadimos.
+
+<pre><code>
+//= require bootstrap-sprockets
+</code></pre>
+ya casi esta listo!, ahora verificamos en este mismo archivo existan estos requires:
+<pre><code>
+//= require jquery
+//= require jquery_ujs
+//= require turbolinks
+//= require bootstrap-sprockets
+//= require_tree .
+</code></pre>
+
+es importante que require_tree este por debajo de todos los demás requires ya que este compila cada uno de los subdirectorios y archivos sobre él, de otra forma bootstrap no podría acceder a esos scripts.
+
+<hr>
+FELICIDADES!, ya has instalado y configurado adecuadamente bootstrap en tu proyecto, espero te halla funcionado y pregunta si tienes dudas, hasta pronto.
