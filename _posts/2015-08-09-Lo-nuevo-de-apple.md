@@ -49,6 +49,8 @@ vamos al archivo app/assets/stylesheets/application.css y lo renombramos como ap
 <hr>
 3. añadir los JS assets
 
+
+
 abrimos el archivo app/assets/javascripts/application.js y añadimos.
 
 <pre><code>
