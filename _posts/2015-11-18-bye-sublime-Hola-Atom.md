@@ -9,9 +9,8 @@ thumbnail:  heart
 tags:
  - rails
  - ruby
+
  - sublime
- - atom
- -ide
 ---
 <p align="justify">
 <h4>
@@ -19,3 +18,4 @@ siempre he sido un poco quisquilloso con la cuestión de seleccionar un IDE, bus
 </h4>
 ⌘ + D: "Magic" selector, igual que en Sublime:</p>
 ![splashscreen](http://4.bp.blogspot.com/-uFcVOfMLO6I/VMDVUqtCX4I/AAAAAAAANSA/wdw5niqKTcc/s1600/magic2.gif)
+[![Atom in your family](https://d13yacurqjgara.cloudfront.net/users/13774/screenshots/1441934/atom_1_1x.jpg)](https://www.youtube.com/watch?v=Y7aEiVwBAdk "Atom rules!!!")
