@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Emprendimiento
-date:       2015-08-09
+date:       2015-11-22
 summary:    como funciona un startup
 categories: jekyll
 
