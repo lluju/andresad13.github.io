@@ -1,68 +1,31 @@
-permalink   : /:title/
-markdown    : kramdown
-highlighter : pygments
+# Site settings
+title: "Leonel A Alfonso"
+email: andresad13@gmail.com
+description: "Leonel Alfonso blog"
+baseurl: ""
+url: "http://andresad13.github.io"
+title_description: "Hi, my name is Leonel Andres Alfonso, development software is my passion and I create awesome work for the mobile and web, welcome, take a look"
+title_image: "https://s.gravatar.com/avatar/99478936f50db27dfc0c40a09a1eda2e?s=300"
+google_analytics: "UA-20365477-4"
+disqus_account: leonelalfonso
+github_repository: https://github.com/andresad13
+addthis_id: ra-513c6fa83da6ec67
+post_limit: 5
 
-paginate: 2 #6
-comments: true
-paginate_path: "/page/:num"
+# Social usernames/URLs
+twitter_username: andresad13
+github_username:  andresad13
+linkedin_link: https://www.linkedin.com/pub/leonel-alfonso/b9/975/357
+google_plus_link: https://plus.google.com/u/0/106982303984702409074
+stackoverflow_link: http://stackoverflow.com/users/5104430/leonel-andr%C3%A9s-alfonso-duarte
 
-baseurl: "/nandomoreira-jekyll-theme" # change to empty string ""
-domain_name: nandomoreira.me
-google_analytics: UA-52446115-1
+# Footer
+footer_left: "Made by @andresad13"
+footer_right: "love, passion ,code"
 
-source:      source
-destination: _site
-
-# cover: /assets/images/header-cover.png
-
-# site title, description, meta_description, meta_keywords
-# Details for the RSS feed generator
-name: Fernando Moreira
-title: Fernando Moreira | Desenvolvimento Web e tudo mais..
-description: "Desenvolvedor Front-end/Wordpress, Design Responsivo, HTML5, CSS3 e JavaScript"
-meta_description: "Desenvolvedor Front-end/Wordpress, Design Responsivo, HTML5, CSS3 e JavaScript"
-meta_keywords: "site, website, loja virtual, lojas virtuais, e-commerce, wordpress, frontend, front-end, html5, css3, javascript, jquery, seo, otimizacao, performance"
-url: http://nandomoreira.me
-production_url: http://nandomoreira.me
-repo: https://github.com/nandomoreirame/nandomoreira-jekyll-theme
-disqus_shortname: "nandothemes"
-rss_path: source/
-author:
-  name      : Fernando Moreira
-  image     : /assets/images/author.jpg
-  email     : nandomoreira.me@gmail.com
-  url       : http://nandomoreira.me
-  facebook  : http://facebook.com/fernando.dev
-  twitter   : http://twitter.com/nandomoreirame
-  instagram : http://instagram.com/nandomoreira.me
-  github    : http://github.com/nandomoreirame
-  linkedin  : http://linkedin.com/in/nandomoreirame
-  bio       : "Desenvolvedor Front-end/Wordpress entusiasta de performance, design responsivo e usabilidade, sempre em busca do melhor projeto e de um bom café."
-
-# thought
-thought:
-  text: I have no special talent. I am only passionately curious.
-  author: Albert Einstein
-
-# Plugin: jekyll-assets
-assets:
-  dirname: /assets
-  baseurl: /nandomoreira-jekyll-theme/assets/ # change to /assets/
-  sources:
-    - assets/images
-    - assets/fonts
-    - assets/css
-    - assets/js
-  cache: true
-  gzip: [ text/css, application/javascript ]
-
-# Compress HTML
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  profile: false
-  ignore:
-    envs: all
-
-exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
+# Build settings
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+permalink: pretty
+exclude: [vendor]
