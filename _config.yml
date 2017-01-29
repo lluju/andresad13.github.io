@@ -1,31 +1,37 @@
 # Site settings
-title: "Leonel A Alfonso"
-email: andresad13@gmail.com
-description: "Leonel Alfonso blog"
-baseurl: ""
-url: "http://andresad13.github.io"
-title_description: "Hi, my name is Leonel Andres Alfonso, development software is my passion and I create awesome work for the mobile and web, welcome, take a look"
-title_image: "https://s.gravatar.com/avatar/99478936f50db27dfc0c40a09a1eda2e?s=300"
-google_analytics: "UA-20365477-4"
-disqus_account: leonelalfonso
-github_repository: https://github.com/andresad13
-addthis_id: ra-513c6fa83da6ec67
-post_limit: 5
+title: Antonio Trento, theme Jeky New Age, the start Bootstrap themplate build for jekyll
+email:
+description: A jekyll template for landing pages, portfolio and blogging
 
-# Social usernames/URLs
-twitter_username: andresad13
-github_username:  andresad13
-linkedin_link: https://www.linkedin.com/pub/leonel-alfonso/b9/975/357
-google_plus_link: https://plus.google.com/u/0/106982303984702409074
-stackoverflow_link: http://stackoverflow.com/users/5104430/leonel-andr%C3%A9s-alfonso-duarte
+baseurl: "" # the subpath of your site, e.g. /blog/ (If you use organization leave empty)
+url: "https://jekynewage.github.io" # the base hostname & protocol for your site
 
-# Footer
-footer_left: "Made by @andresad13"
-footer_right: "love, passion ,code"
+#Google Ad Words Data from scripts code (using Google responsive options) and ad client
+data-ad-slot: 2973388149
+data-ad-client: ca-pub-9204963049240271
+google_ad_client: ca-pub-9204963049240271
+
+google_analytics: "UA-86331249-1"
+addthis_id: ra-5644da281510c62f
+disqus_account: jeky-new-age
+
+# Social networks usernames (many more available: flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.) see all icon at fontawesome.io
+social:
+  - title: twitter
+    url: https://twitter.com/lantoniotrento
+  - title: facebook
+    url: https://facebook.com/lantoniotrento
+  - title: google-plus
+    url: https://plus.google.com/+AntoniotrentoIt
+  #- title: github
+  #  url: http://github.com/jekyll
 
 # Build settings
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+markdown: kramdown
+highlighter: rouge
 permalink: pretty
-exclude: [vendor]
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
+# Build settings
